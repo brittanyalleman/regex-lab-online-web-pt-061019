@@ -6,7 +6,7 @@ end
 
 
 def words_starting_with_un_and_ending_with_ing(text)
-text.scan(UNun\w[/ing$/]) ? true : false
+text.scan(/UNun\w[/ing$/]) ? true : false
   [#UNun\w[/ing$/]
   #(/^[un\w/{ing$})
 end
