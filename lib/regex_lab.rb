@@ -26,6 +26,6 @@ text.match?(/^[A-Z].*\W$/)
 
 def valid_phone_number?(phone)
   #binding.pry
-phone.scan(/\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z/)
+phone.match(/\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z/)
 
 end
